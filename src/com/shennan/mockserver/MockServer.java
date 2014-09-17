@@ -6,6 +6,9 @@ import java.net.InetSocketAddress;
 import org.apache.log4j.Logger;
 import com.sun.net.httpserver.HttpServer;
 
+/**
+ * @Author shennan
+ */
 public class MockServer {
 
 	private final static Logger log=Logger.getLogger(MockServer.class);
