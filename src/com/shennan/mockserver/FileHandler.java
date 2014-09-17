@@ -21,7 +21,9 @@ import org.apache.log4j.Logger;
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.xml.internal.messaging.saaj.util.ByteOutputStream;
-
+/**
+ * @author shennan
+ */
 public class FileHandler implements HttpHandler {
 
 	private final static Logger log=Logger.getLogger(FileHandler.class);
