@@ -60,7 +60,6 @@ public class FileHandler implements HttpHandler {
 		Map<String,String> postPara=getParameter(in);
 		final Map<String,String> reqMap=mergeMap(getPara,postPara);
 		
-		//TODO judge parameter
 		String fullname=uri;
 		fullname=uri.split("\\?")[0];
 		fullname=fullname.replaceAll("/", "\\\\");
@@ -72,6 +71,7 @@ public class FileHandler implements HttpHandler {
 			
 			@Override
 			public boolean accept(File dir, String name) {
+				if(filename==null||filename.length()<1)return false;
 				if(name.indexOf(filename)<0)return false;
 				String para=null;
 				Map<String,String> params=new HashMap<String,String>();

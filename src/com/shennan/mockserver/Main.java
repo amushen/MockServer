@@ -35,6 +35,9 @@ public class Main {
 	}
 	
 	private static void printHelp(){
+		System.out.println("java -jar MockServer.jar [mock path] [port]");
+		System.out.println("e.g.");
+		System.out.println("java -jar MockServer.jar d:\\mocks 808");
 		System.out.println("copyright amushen@qq.com 2014, all rights reserved.");
 	}
 
