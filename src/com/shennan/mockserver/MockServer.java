@@ -22,7 +22,7 @@ public class MockServer {
 	public void start(){
 		HttpServer server;
 		try {
-			server = HttpServer.create(new InetSocketAddress("127.0.0.1", Integer.parseInt(port)), 0);
+			server = HttpServer.create(new InetSocketAddress("0.0.0.0", Integer.parseInt(port)), 0);
 			server.createContext("/", new FileHandler(mockPath));
 			server.setExecutor(null);
 			server.start();
